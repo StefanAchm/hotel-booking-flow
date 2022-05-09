@@ -6,13 +6,13 @@ const CompressionPlugin = require('compression-webpack-plugin')
 module.exports = {
   configureWebpack: {
     plugins: [
-      new ImageminPlugin({
-        plugins: [
-          ImageminMozjpeg({
-            quality: 40
-          })
-        ]
-      }),
+      // new ImageminPlugin({
+      //   plugins: [
+      //     ImageminMozjpeg({
+      //       quality: 40
+      //     })
+      //   ]
+      // }),
       new CompressionPlugin({
         filename: '[path].br[query]',
         algorithm: 'brotliCompress',
